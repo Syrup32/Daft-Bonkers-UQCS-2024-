@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"grassland assets",
-    "path":"folders/Objects/grassland assets.yy",
+    "path":"folders/Objects/Stage assets/grassland assets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

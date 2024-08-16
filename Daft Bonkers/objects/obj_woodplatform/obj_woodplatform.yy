@@ -7,9 +7,12 @@
   "overriddenProperties":[],
   "parent":{
     "name":"grassland assets",
-    "path":"folders/Objects/grassland assets.yy",
+    "path":"folders/Objects/Stage assets/grassland assets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_grassland",
+    "path":"objects/obj_grassland/obj_grassland.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

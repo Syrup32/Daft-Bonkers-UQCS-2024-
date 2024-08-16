@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"obj_player1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_player1",
   "overriddenProperties":[],
@@ -9,7 +13,10 @@
     "name":"Player assets",
     "path":"folders/Objects/Player assets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_players",
+    "path":"objects/obj_players/obj_players.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

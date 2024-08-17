@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"overall_score_keeper",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"overall_score_keeper",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

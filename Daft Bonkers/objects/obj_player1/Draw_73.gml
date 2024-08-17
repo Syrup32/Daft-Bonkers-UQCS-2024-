@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description health bar
 // You can write your code in this editor
 //draw_text(x - 500,y + 80 , "Player 1 Health: " + string(player_hitpoint));
 draw_self();

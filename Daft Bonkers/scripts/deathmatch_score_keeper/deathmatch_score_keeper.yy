@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"deathmatch_score_keeper",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deathmatch_score_keeper",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

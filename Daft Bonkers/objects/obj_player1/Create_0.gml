@@ -9,7 +9,13 @@ global.player1Data = {
 	round_points : 0,
 	weapon_index : 0, ///index 0 is fists, 1 is P365, 2 is baseball bat
 	ammo : 0, ///ammunition check
-	deaths : 0,
-	round_points : 0
+	//deaths : 0,
+	round_points : 0,
+	activate_invincibility : false
 	
 }
+image_alpha = 0
+fadeIn = true
+invincibility = true;
+invincibility_frames = 60;
+alarm[0] = invincibility_frames;

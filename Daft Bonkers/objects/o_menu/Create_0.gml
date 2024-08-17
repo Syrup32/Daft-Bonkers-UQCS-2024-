@@ -17,3 +17,4 @@ menu_index = 0;
 last_selected = 0;
 
 randomize()
+reset_game()

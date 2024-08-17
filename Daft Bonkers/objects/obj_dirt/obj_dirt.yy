@@ -9,7 +9,10 @@
     "name":"grassland assets",
     "path":"folders/Objects/Stage assets/grassland assets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_stage",
+    "path":"objects/obj_stage/obj_stage.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

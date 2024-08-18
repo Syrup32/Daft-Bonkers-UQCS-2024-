@@ -54,6 +54,29 @@ if keyboard_check_pressed(191) && global.player2Data.weapon_index == 2
 	alarm[2] = 30
 }
 
+//rifle
+if keyboard_check_pressed(191) && global.player2Data.weapon_index == 4
+{
+	instance_create_layer(x+(50*sign(image_xscale)),y,"Instances", obj_general_projectile,
+	{
+		hspeed : 10*sign(obj_player1.image_xscale)
+		});
+	instance_create_layer(x+(50*sign(image_xscale)),y,"Instances", obj_general_projectile,
+	{
+		hspeed : 10*sign(obj_player1.image_xscale)
+		});
+	instance_create_layer(x+(50*sign(image_xscale)),y,"Instances", obj_general_projectile,
+	{
+		hspeed : 10*sign(obj_player1.image_xscale)
+		});
+	global.player2Data.ammo -= 3
+	if global.player2Data.ammo == 0
+	{
+		sprite_index = Player_2
+		global.player2Data.weapon_index = 0
+	}
+}
+
 //mine
 if keyboard_check_pressed(191) && global.player2Data.weapon_index == 3
 {

@@ -22,9 +22,7 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f143925c-3d2d-437f-bf5c-7ba7f8b4e891","blendMode":0,"displayName":"default","isLocked":false,"name":"f143925c-3d2d-437f-bf5c-7ba7f8b4e891","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"d030214a-22dc-4a25-8101-b732f82e0acd","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"d030214a-22dc-4a25-8101-b732f82e0acd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"fadf4d26-325e-4bff-bbfa-afe7543659c1","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"fadf4d26-325e-4bff-bbfa-afe7543659c1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"14cc6ae7-8af9-4d40-916f-0ae1a1dcd600","blendMode":0,"displayName":"default","isLocked":false,"name":"14cc6ae7-8af9-4d40-916f-0ae1a1dcd600","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"item_mine",
   "nineSlice":null,

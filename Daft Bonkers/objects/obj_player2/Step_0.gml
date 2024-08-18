@@ -54,9 +54,21 @@ if keyboard_check_pressed(191) && global.player2Data.weapon_index == 2
 	alarm[2] = 30
 }
 
+//mine
+if keyboard_check_pressed(191) && global.player2Data.weapon_index == 3
+{
+	instance_create_layer(x-(50*sign(image_xscale)),y + 40,"Instances", obj_mine_on_ground);
+	global.player2Data.ammo -= 1
+	if global.player2Data.ammo == 0
+	{
+		sprite_index = Player_2
+		global.player2Data.weapon_index = 0
+	}
+}
+
 if (global.player2Data.current_hp <= 0)
 {
-	player2death()
+	death_check_player2()
 	instance_destroy(obj_player2);
 	//var spawn_point_no = irandom(5);
 	//var spawn_point = $"spawn_${spawn_point_no}";

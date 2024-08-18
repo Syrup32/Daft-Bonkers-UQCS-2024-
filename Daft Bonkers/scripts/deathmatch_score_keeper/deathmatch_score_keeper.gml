@@ -5,13 +5,13 @@
 //player2_deaths = 0;
 
 function player2death(){
-	with(death_match){
+	with(obj_death_match){
 		global.death_match.player2_death += 1;
 		show_debug_message(global.death_match.player2_death)
 	}
 }
 function player1death(){
-	with(death_match){
+	with(obj_death_match){
 		global.death_match.player1_death += 1;
 	}
 }

@@ -45,6 +45,18 @@ if keyboard_check_pressed(ord("V")) && global.player1Data.weapon_index == 1
 	}
 }
 
+//mine
+if keyboard_check_pressed(ord("V")) && global.player1Data.weapon_index == 3
+{
+	instance_create_layer(x-(50*sign(image_xscale)),y + 40,"Instances", obj_mine_on_ground);
+	global.player1Data.ammo -= 1
+	if global.player1Data.ammo == 0
+	{
+		sprite_index = Player_1
+		global.player1Data.weapon_index = 0
+	}
+}
+
 //baseball bat
 if keyboard_check_pressed(ord("V")) && global.player1Data.weapon_index == 2
 {
@@ -56,7 +68,7 @@ if keyboard_check_pressed(ord("V")) && global.player1Data.weapon_index == 2
 //death and respawn
 if (global.player1Data.current_hp <= 0)
 {
-	player1death()
+	death_check_player1()
 	instance_destroy(obj_player1);
 	//var spawn_point_no = irandom(5);
 	//var spawn_point = $"spawn_${spawn_point_no}";

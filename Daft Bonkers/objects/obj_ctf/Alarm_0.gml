@@ -17,6 +17,6 @@ if global.ctf.player1_badge == global.ctf.player2_badge
 	tie_round();
 	tie = true;
 }
-
+audio_play_sound(yay_noise,1,false);
 alarm[1] = round_end;
 

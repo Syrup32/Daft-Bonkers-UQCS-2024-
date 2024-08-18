@@ -30,20 +30,23 @@ function back_to_main(){
 	room_goto(main_menu);
 }
 function victory_check(){
-	if global.player1_victories = 2 && global.player2_victories = 2
+	if global.player1_victories = 5 && global.player2_victories = 5
 	{
 		instance_create_layer(room_width/2,room_height/4,"Instances",obj_tie_game);
 		call_later(4, time_source_units_seconds, back_to_main);
+		audio_play_sound(tie_noise,1,false);
 	}
-	else if global.player2_victories = 2
+	else if global.player2_victories = 5
 	{
 		instance_create_layer(room_width/2,room_height/4,"Instances",obj_red_win);
 		call_later(4, time_source_units_seconds, back_to_main);
+		audio_play_sound(red_win_noise,1,false);
 	}
-	else if global.player1_victories = 2
+	else if global.player1_victories = 5
 	{
 		instance_create_layer(room_width/2,room_height/4,"Instances",obj_blue_win);
 		call_later(4, time_source_units_seconds, back_to_main);
+		audio_play_sound(blue_win_noise,1,false);
 	}
 	else
 	{

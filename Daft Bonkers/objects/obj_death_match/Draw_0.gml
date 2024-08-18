@@ -2,6 +2,7 @@
 // You can write your code in this editor
 draw_self();
 draw_text(50, 50, game_get_speed(gamespeed_fps));
+draw_text(room_width/2,50,"Time left:");
 draw_text(room_width/2,100,alarm[0])
 draw_set_color(c_red);
 draw_text(room_width * 0.25,room_height*0.9, global.death_match.player2_death);

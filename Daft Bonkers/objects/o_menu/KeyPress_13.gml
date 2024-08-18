@@ -20,4 +20,14 @@ switch(menu_index) {
 	case 5:
 		game_end();
 		break;
+	case 6:
+		if audio_is_playing(BGM)
+		{		
+			audio_stop_sound(BGM);
+		}
+		else
+		{
+			audio_play_sound(BGM,1,true);
+		}
+		break;
 }

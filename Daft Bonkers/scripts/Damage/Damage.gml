@@ -5,6 +5,7 @@ function player1GetDamage(value){
 		if (!invincibility)
 		{
 			global.player1Data.current_hp -= value;
+			audio_play_sound(hurt_noise,1,false)
 			global.player1Data.activate_invincibility = true
 			move_and_collide(-20* value * sign(obj_player1.image_xscale),-20 * value,obj_stage,10)
 		}
@@ -15,6 +16,7 @@ function player2GetDamage(value){
 		if (!invincibility)
 		{
 			global.player2Data.current_hp -= value;
+			audio_play_sound(hurt_noise,1,false);
 			global.player2Data.activate_invincibility = true
 			move_and_collide(-20 * sign(obj_player2.image_xscale),-20,obj_stage,10)
 		}

@@ -18,5 +18,5 @@ if global.death_match.player1_death == global.death_match.player2_death
 	tie_round();
 	tie = true;
 }
-
+audio_play_sound(yay_noise,1,false);
 alarm[1] = round_end;

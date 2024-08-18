@@ -2,11 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player1_capture(){
 	with(obj_ctf){
+		audio_play_sound(collect_noise,1,false)
 		global.ctf.player1_badge += 1;
 	}
 }
 function player2_capture(){
 	with(obj_ctf){
+		audio_play_sound(collect_noise,1,false)
 		global.ctf.player2_badge += 1;
 	}
 }

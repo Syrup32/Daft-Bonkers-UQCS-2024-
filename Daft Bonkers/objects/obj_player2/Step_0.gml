@@ -28,6 +28,7 @@ if keyboard_check_pressed(191) && global.player2Data.weapon_index == 0
 {
 	instance_create_layer(x+(50*sign(image_xscale)),y,"Instances", obj_melee_hitbox);
 	sprite_index = Player_2_Punch
+	audio_play_sound(punch_noise,1,false);
 	alarm[1] = 30
 }
 
@@ -51,6 +52,7 @@ if keyboard_check_pressed(191) && global.player2Data.weapon_index == 2
 {
 	instance_create_layer(x+(60*sign(image_xscale)),y,"Instances", obj_bat_hitbox);
 	sprite_index = Player_2_swing
+	audio_play_sound(sound_menu_switch,1,false);
 	alarm[2] = 30
 }
 
@@ -81,6 +83,7 @@ if keyboard_check_pressed(191) && global.player2Data.weapon_index == 4
 if keyboard_check_pressed(191) && global.player2Data.weapon_index == 3
 {
 	instance_create_layer(x-(50*sign(image_xscale)),y + 40,"Instances", obj_mine_on_ground);
+	audio_play_sound(mine_set_noise,1,false);
 	global.player2Data.ammo -= 1
 	if global.player2Data.ammo == 0
 	{
@@ -93,9 +96,7 @@ if (global.player2Data.current_hp <= 0)
 {
 	death_check_player2()
 	instance_destroy(obj_player2);
-	//var spawn_point_no = irandom(5);
-	//var spawn_point = $"spawn_${spawn_point_no}";
-	//var spawn_point_obj = instance_find(spawn_0, irandom_range(0,instance_number(spawn_0)-1));
+	audio_play_sound(death_noise,1,false);
 	var spawn_point_obj = choose(spawn_0, spawn_1, spawn_2, spawn_3, spawn_4, spawn_5)
 	instance_create_layer(spawn_point_obj.x ,spawn_point_obj.y , "Instances", obj_player2);
 	sprite_index = Player_2;

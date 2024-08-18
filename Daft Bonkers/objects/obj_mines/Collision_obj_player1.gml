@@ -6,5 +6,5 @@ with obj_player1
 	global.player1Data.weapon_index = 3
 	global.player1Data.ammo = 2
 }
-	
+audio_play_sound(collect_noise,1,false);
 instance_destroy()
